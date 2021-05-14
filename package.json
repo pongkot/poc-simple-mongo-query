@@ -1,0 +1,15 @@
+{
+  "name": "poc-simple-mongo-query",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pongkot/poc-simple-mongo-query.git",
+  "author": "Pongkot Sae-li <pongkot.saeli@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.6",
+    "rxjs": "^7.0.1"
+  }
+}
