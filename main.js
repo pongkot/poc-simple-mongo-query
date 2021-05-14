@@ -9,13 +9,13 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 });
 
-const createDb = async (client, dbName) => {
+const createDbo = async (client, dbName) => {
   return (await client.connect()).db(dbName);
 };
 
 const app = async () => {
-  const mongo = await createDb(client, dbName);
-  const cursor = mongo.collection("collection").find({});
+  const dbo = await createDbo(client, dbName);
+  const cursor = dbo.collection("collection").find({});
 
   from(cursor)
     .pipe(tap((e) => console.log(e)))
